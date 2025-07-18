@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Collection - Hat ON</title>
+    <link rel="stylesheet" href="C:\Users\Abhay\OneDrive\Desktop\web\style\style.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo h2 {
+      font-size: 26px;
+      font-weight: bold;
+      color: #000;
+    }
+    .hero {
+      background: url('https://media.gq.com/photos/5a04f9a398002d2e253679f5/master/pass/fall-hats-gq-style-0816-01-1.jpg') no-repeat center center/cover;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    }
+
+    .collection-section {
+      padding: 60px 40px;
+      background: #fff;
+    }
+
+    .collection-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .collection-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .collection-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
+      animation: slideUp 0.6s ease-in-out;
+    }
+
+    .collection-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .collection-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .collection-card .details {
+      padding: 16px;
+      text-align: center;
+    }
+
+    .collection-card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .collection-card p {
+      font-size: 16px;
+      color: #e91e63;
+      font-weight: bold;
+    }
+
+    .collection-card del {
+      color: #999;
+      margin-left: 5px;
+      font-size: 14px;
+    }
+
+    .info-section {
+      padding: 60px 40px;
+      background: #fce4ec;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+    .feature img {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .footer-grid h4 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .footer-grid p, .footer-grid input {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .footer-grid input {
+      padding: 6px;
+      width: 100%;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .payments {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .payments img {
+      height: 30px;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 16px;
+      font-size: 14px;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><h2>Hat ON</h2></div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#" class="active">My Collection</a></li>
+        <li><a href="#">Best Selling</a></li>
+        <li><a href="#">Hat ON</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">My Collection</section>
+
+  <section class="collection-section">
+    <h2 class="collection-title">Top Picks Just for You</h2>
+    <div class="collection-grid">
+      <div class="collection-card">
+        <a href="product/product1.html">
+          <img src="https://img.freepik.com/free-photo/elegant-men-headwear-felt-fedora-cowboy-hat-generated-by-ai_188544-9603.jpg" alt="Elegant Fedora">
+          <div class="details">
+            <h3>Elegant Fedora</h3>
+            <p>₹799 <del>₹1499</del></p>
+          </div>
+        </a>
+      </div>
+      <div class="collection-card">
+        <a href="product2.html">
+          <img src="https://western-cowboy.com/cdn/shop/files/659cf219-0205-4675-8c66-2424a5efbbb3_1_1024x1024.webp?v=1690369948" alt="Gray Wool Hat">
+          <div class="details">
+            <h3>Gray Wool Hat</h3>
+            <p>₹699 <del>₹1399</del></p>
+          </div>
+        </a>
+      </div>
+      <div class="collection-card">
+        <a href="product3.html">
+          <img src="https://png.pngtree.com/background/20230614/original/pngtree-brown-fedora-hat-against-a-black-background-picture-image_3483894.jpg" alt="Explorer Brown">
+          <div class="details">
+            <h3>Explorer Brown</h3>
+            <p>₹649 <del>₹1299</del></p>
+          </div>
+        </a>
+      </div>
+      <div class="collection-card">
+        <a href="product4.html">
+          <img src="https://i.etsystatic.com/21197008/r/il/9bddd4/3335979639/il_1588xN.3335979639_qqmb.jpg" alt="Teardrop Crown">
+          <div class="details">
+            <h3>Teardrop Crown</h3>
+            <p>₹899 <del>₹1699</del></p>
+          </div>
+        </a>
+      </div>
+      <div class="collection-card">
+        <a href="product5.html">
+          <img src="https://img.freepik.com/premium-photo/photo-black-pork-pie-hat-isolated-white-background_847439-94017.jpg" alt="Pork Pie Classic">
+          <div class="details">
+            <h3>Pork Pie Classic</h3>
+            <p>₹499 <del>₹1299</del></p>
+          </div>
+        </a>
+      </div>
+      <div class="collection-card">
+        <a href="product6.html">
+          <img src="https://i.pinimg.com/originals/67/a2/73/67a2736613a604a3b1409398f5ecccc0.jpg" alt="Wide Brim Black">
+          <div class="details">
+            <h3>Wide Brim Black</h3>
+            <p>₹999 <del>₹1899</del></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <div class="features">
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/679/679720.png" alt="Shipping">
+        <h4>Shipping All Over India</h4>
+        <p>Express Shipping</p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Money Guarantee">
+        <h4>Money Guarantee</h4>
+        <p>Within 7 days of exchange</p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Online Support">
+        <h4>Online Support</h4>
+        <p>24/7 assistance</p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Secure Payment">
+        <h4>Flexible Payment</h4>
+        <p>Secured Payment</p>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+      <div>
+        <h4>Contact Us</h4>
+        <p>Whatsapp: +91 9698843038</p>
+        <p>Email: helpHatON18@gmail.com</p>
+      </div>
+      <div>
+        <h4>Collection</h4>
+        <p>Home</p>
+        <p>All Collection</p>
+        <p>Best Selling</p>
+        <p>Men Shirt</p>
+      </div>
+      <div>
+        <h4>Customer Service</h4>
+        <p>Search</p>
+        <p>Privacy Policy</p>
+        <p>Refund Policy</p>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <p>Sign up to receive 10% off</p>
+        <input type="email" placeholder="Enter email">
+      </div>
+    </div>
+
+    <div class="payments">
+      <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/upi_logo_icon_169316.png" alt="UPI">
+      <img src="https://png.pngtree.com/png-clipart/20230916/original/pngtree-google-pay-payment-icon-vector-png-image_12256719.png" alt="GPay">
+      <img src="https://1000logos.net/wp-content/uploads/2021/03/Paytm_Logo.png" alt="Paytm">
+      <img src="https://1000logos.net/wp-content/uploads/2022/11/PhonePe-Logo.png" alt="PhonePe" >
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hat ON Style. All rights reserved.</p>
+  </footer>
+
+  <script>
+     const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", () => {
+      toggle.classList.toggle("active");
+      navLinks.classList.toggle("show");
+    });
+      
+  </script>
+</body>
+</html>
