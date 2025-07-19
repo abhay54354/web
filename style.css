@@ -426,7 +426,7 @@
     }
 
     .text-container h1 {
-      
+      margin: 0;
       font-size: 150px;
       color: rgba(15, 15, 15, 0.01);
       background-image: url("https://media.gq.com/photos/5a04f9a398002d2e253679f5/master/pass/fall-hats-gq-style-0816-01-1.jpg");
